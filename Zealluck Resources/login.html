@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your ZRNL account.">
+    <title>Login | ZRNL</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="zealluck-login-body">
+    <main class="zealluck-login-page">
+        <div class="zealluck-login-background">
+            <img src="images/Zrnl-bg-image.png" alt="" aria-hidden="true">
+        </div>
+        <div class="zealluck-login-overlay"></div>
+        <section class="zealluck-login-section">
+            <div class="zealluck-login-card">
+                <a href="index.html" class="zealluck-login-logo">
+                    <img src="images/zealluck-logo.png" alt="ZRNL logo">
+                </a>
+                <header class="zealluck-login-header">
+                    <h1>Sign In</h1>
+                    <p>Welcome back to <span>ZRNL</span> </p>
+                </header>
+                <form action="#" method="post" class="zealluck-login-form" novalidate>
+                    <div class="zealluck-login-input">
+                        <input type="text" name="email_or_id" placeholder="Email or System ID" autocomplete="username" required>
+                    </div>
+                    <div class="zealluck-login-input">
+                        <input type="password" name="password" placeholder="Password" autocomplete="current-password" required>
+                    </div>
+                    <button type="submit" name="login" class="zealluck-login-btn">
+                        Log In
+                    </button>
+                </form>
+                <div class="zealluck-login-register">
+                    <a href="register.html">
+                        <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                        Create an account
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="zealluck-app-container">
+        <div class="zealluck-app-install">
+            <div class="zealluck-app-logo">
+                <img src="images/zealluck-logo.png" alt="">
+            </div>
+            <div class="zealluck-app-text">
+                <h3>Install <span>ZRNL</span> App</h3>
+                <p>Add to home screen for faster access.</p>
+            </div>
+        </div>
+        <div class="zealluck-install-cta">
+            <span><a href="index.html">Not Now</a></span>
+            <span>Install</span>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

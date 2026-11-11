@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | ZRNL</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="zealluck-register-body">
+    <main class="zealluck-register-page">
+        <div class="zealluck-register-wrapper">
+            <div class="zealluck-register-background">
+                <img src="images/Zrnl-bg-image.png" alt="" aria-hidden="true">
+            </div>
+            <div class="zealluck-register-overlay"></div>
+            <section class="zealluck-register-section">
+                <div class="zealluck-register-card">
+                    <a href="index.html">
+                        <img src="images/zealluck-logo.png" alt="Zealluck Resources logo">
+                    </a>
+                    <header class="zealluck-register-header">
+                        <h1>Register Account</h1>
+                        <p>Create your <span>ZRNL</span> account and get started.</p>
+                    </header>
+                    <form action="#" method="post" class="zealluck-register-form" novalidate>
+                        <div class="zealluck-register-input">
+                            <label for="account-officer-id">Account Officer ID</label>
+                            <input type="text" id="account-officer-id" name="account_officer_id" placeholder="e.g Hilary Egbulam" required>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="First Name" autocomplete="given-name" required>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Last Name" autocomplete="family-name" required>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone_number" placeholder="080********" autocomplete="tel" required>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="account-type">Account Type</label>
+                            <select name="account_type" id="account-type" required>
+                                <option value="" disabled selected>Select account type</option>
+                                <option value="soft_savings">Soft Savings</option>
+                                <option value="target_savings">Target Savings</option>
+                                <option value="business_flexible">Business Flexible</option>
+                            </select>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" name="register_password" placeholder="Create password" autocomplete="new-password" required>
+                        </div>
+                        <div class="zealluck-register-input">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" autocomplete="new-password" required>
+                        </div>
+                        <div class="zealluck-register-terms">
+                            <label for="terms">
+                                <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                                <span>I accept the <a href="terms.php">Terms &amp; Conditions</a></span>
+                            </label>
+                        </div>
+                        <div class="zealluck-register-success" id="register-success">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Your registration details have been sent, thanks for choosing ZRNL.</span>
+                        </div>
+                        <button type="submit" name="register" class="zealluck-register-btn">Register</button>
+                    </form>
+                    <div class="zealluck-register-login">
+                        <p>Already have an account?</p>
+                        <a href="login.html">Sign In</a>
+                    </div>
+                </div>
+            </section>
+            <div class="zealluck-apk-container">
+                <div class="zealluck-apk-install">
+                    <div class="zealluck-apk-logo">
+                        <img src="images/zealluck-logo.png" alt="ZRNL app logo">
+                    </div>
+                    <div class="zealluck-apk-text">
+                        <h3>Install <span>ZRNL</span> App</h3>
+                        <p>Add to home screen for faster access.</p>
+                    </div>
+                </div>
+                <div class="zealluck-apk-cta">
+                    <button type="button" class="zealluck-install-dismiss">Not Now</button>
+                    <button type="button" class="zealluck-install-button">Install</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="auth.js"></script>
+</body>
+</html>

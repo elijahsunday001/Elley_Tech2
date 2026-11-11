@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Login Form */
+.zealluck-login-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    background: #071a35;
+    color: #ffffff;
+}
+.zealluck-login-page {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+.zealluck-login-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.zealluck-login-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.zealluck-login-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(3, 18, 43, 0.92), rgba(5, 37, 79, 0.82), rgba(0, 15, 35, 0.92));
+    z-index: 1;
+}
+.zealluck-login-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+.zealluck-login-card {
+    width: 100%;
+    padding: 40px 35px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    color: #14243b;
+    text-align: center;
+}
+.zealluck-login-logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.zealluck-login-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.zealluck-login-header {
+    margin-bottom: 30px;
+}
+.zealluck-login-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #092c59;
+    margin-bottom: 9px;
+}
+.zealluck-login-header p {
+    font-size: 14px;
+    color: #718096;
+}
+.zealluck-login-header span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.zealluck-login-input {
+    width: 100%;
+}
+.zealluck-login-input input {
+    width: 100%;
+    height: 55px;
+    padding: 0 17px;
+    border: 1px solid #d9e0e9;
+    border-radius: 8px;
+    outline: none;
+    background: #dbe2ec;
+    transition: 0.3s ease;
+}
+.zealluck-login-input input::placeholder {
+    color: #8995a5;
+}
+.zealluck-login-input input:focus {
+    border-color: #1266c5;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(18, 102, 197, 0.12);
+
+}
+.zealluck-login-btn {
+    width: 100%;
+    height: 55px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #2ECC71;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.zealluck-login-btn:hover {
+    background: #158e47;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(7, 86, 165, 0.2);
+}
+.zealluck-login-register {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e8edf3;
+}
+.zealluck-login-register a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    color: #0756a5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.zealluck-login-register a:hover {
+    color: #063f7c;
+}
+.zealluck-login-register i {
+    font-size: 17px;
+}
+.zealluck-app-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: rgba(255, 255, 255, 0.96);
+    color: #14243b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.zealluck-app-install {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.zealluck-app-logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+.zealluck-app-text h3 {
+    font-size: 13px;
+    color: #092c59;
+    margin-bottom: 5px;
+}
+.zealluck-app-text p {
+    font-size: 11px;
+    color: #718096;
+    line-height: 1.4;
+}
+.zealluck-app-text span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-install-cta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+.zealluck-install-cta span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0756a5;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.zealluck-install-cta span:last-child {
+    padding: 9px 13px;
+    background: #2ECC71;
+    color: #ffffff;
+    border-radius: 6px;
+}
+.zealluck-install-cta span:last-child:hover {
+    background: #08f317;
+}
+.zealluck-install-cta span a {
+    color: #093480;
+    font-size: 12px;
+    text-decoration: none;
+}
+/* Registration Form */
+.zealluck-register-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    background: #071a35;
+    color: #ffffff;
+}
+.zealluck-register-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.zealluck-register-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+.zealluck-register-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.zealluck-register-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.zealluck-register-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(3, 18, 43, 0.88), rgba(5, 37, 79, 0.78), rgba(0, 15, 35, 0.90));
+    z-index: 1;
+}
+.zealluck-register-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.zealluck-register-card {
+    width: 100%;
+    padding: 40px 45px;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    color: #14243b;
+    text-align: center;
+}
+.zealluck-register-card > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.zealluck-register-card > a img {
+    width: 95px;
+    height: 75px;
+    object-fit: contain;
+}
+.zealluck-register-header {
+    margin-bottom: 30px;
+}
+.zealluck-register-header h1{
+    font-size: 29px;
+    font-weight: 700;
+    color: #093480;
+    margin-bottom: 5px;
+}
+.zealluck-register-header p {
+    font-size: 14px;
+    color: #718096;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+}
+.zealluck-register-header span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    text-align: left;
+}
+.zealluck-register-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.zealluck-register-input label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #26384e;
+}
+.zealluck-register-input input, .zealluck-register-input select {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border: 1px solid #d9e0e9;
+    border-radius: 7px;
+    outline: none;
+    background: #f8f9fb;
+    color: #26384e;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.zealluck-register-input input::placeholder {
+    color: #8995a5;
+    opacity: 0.7;
+}
+.zealluck-register-input input:focus, .zealluck-register-input select:focus {
+    border-color: #1266c5;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(18, 102, 197, 0.12);
+}
+.zealluck-register-input select {
+    cursor: pointer;
+    appearance: auto;
+}
+.zealluck-register-terms {
+    width: 100%;
+    margin-top: -2px;
+}
+.zealluck-register-terms label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    color: #526174;
+    cursor: pointer;
+}
+.zealluck-register-terms input {
+    width: 16px;
+    height: 16px;
+    accent-color: #0756a5;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.zealluck-register-terms a {
+    color: #0756a5;
+    text-decoration: none;
+    font-weight: 600;
+}
+.zealluck-register-terms a:hover {
+    text-decoration: underline;
+}
+.zealluck-register-btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background: #0756a5;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.zealluck-register-btn:hover {
+    background: #063f7c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(7, 86, 165, 0.2);
+}
+.zealluck-register-login {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e8edf3;
+    text-align: center;
+}
+.zealluck-register-login p {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 9px;
+}
+.zealluck-register-login a {
+    display: inline-block;
+    color: #0756a5;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.zealluck-register-login a:hover {
+    color: #2ECC71;
+}
+.zealluck-apk-container {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: rgba(255, 255, 255, 0.97);
+    color: #14243b;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.12);
+}
+.zealluck-apk-install {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.zealluck-apk-logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+.zealluck-apk-text h3 {
+    font-size: 13px;
+    color: #093480;
+    margin-bottom: 5px;
+}
+.zealluck-apk-text p {
+    font-size: 11px;
+    color: #718096;
+    line-height: 1.3;
+}
+.zealluck-apk-text span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-apk-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.zealluck-apk-cta button {
+    border: none;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.zealluck-install-dismiss {
+    padding: 8px 10px;
+    background: transparent;
+    color: #093480;
+}
+.zealluck-install-button {
+    padding: 8px 10px;
+    background: #2ECC71;
+    color: #ffffff;
+    border-radius: 4px;
+}
+.zealluck-install-button:hover {
+    background: #08f317;
+}
+.zealluck-register-error {
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 1.1;
+    animation: errorFadeIn 0.3s ease-in-out;
+}
+.zealluck-register-input input[aria-invalid="true"], .zealluck-register-input select[aria-invalid="true"] {
+    border: 1px solid #dc3545;
+    background-color: #ffffff;
+    outline: none;
+}
+.zealluck-register-terms input[aria-invalid="true"] {
+    outline: 1px solid #dc3545;
+    outline-offset: 2px;
+}
+@keyframes errorFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.zealluck-register-success {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 15px;
+    margin: 15px 0;
+    background: #eaf8ef;
+    border: 1px solid #a8dfba;
+    border-radius: 8px;
+    color: #198754;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    animation: successFadeIn 0.3s ease-in-out;
+}
+.zealluck-register-success i {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.zealluck-register-success.show {
+    display: flex;
+}
+@keyframes successFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Media Query */
+@media (max-width: 600px) {
+    .zealluck-login-page {
+        padding: 50px 18px 90px;
+    }
+    .zealluck-login-card {
+        padding: 35px 23px;
+    }
+    .zealluck-login-logo img {
+        width: 85px;
+        height: 85px;
+    }
+    .zealluck-login-header h1 {
+        font-size: 26px;
+    }
+    .zealluck-app-container {
+        padding: 12px;
+        gap: 20px;
+    }
+    .zealluck-app-text p {
+        font-size: 10px;
+    }
+    .zealluck-install-cta {
+        gap: 9px;
+    }
+    /* Registration Form */
+    .zealluck-register-wrapper {
+        padding: 35px 18px 90px;
+    }
+    .zealluck-register-section {
+        max-width: 550px;
+    }
+    .zealluck-register-card {
+        padding: 35px 28px;
+    }
+    .zealluck-register-header h1 {
+        font-size: 26px;
+    }
+    .zealluck-apk-container {
+        padding: 13px;
+    }
+}
+@media (max-width: 480px) {
+    .zealluck-register-wrapper {
+        padding: 25px 13px 80px;
+    }
+    .zealluck-register-card {
+        padding: 30px 20px;
+    }
+    .zealluck-register-card > a img {
+        width: 85px;
+        height: 65px;
+    }
+    .zealluck-register-header h1 {
+        font-size: 23px;
+    }
+    .zealluck-register-header p {
+        font-size: 12px;
+        letter-spacing: 0.6px;
+    }
+    .zealluck-register-form {
+        gap: 16px;
+    }
+    .zealluck-register-input label {
+        font-size: 13px;
+    }
+    .zealluck-register-input input, .zealluck-register-input select {
+        height: 49px;
+        font-size: 13px;
+    }
+    .zealluck-register-btn {
+        height: 50px;
+    }
+    .zealluck-apk-container {
+        padding: 12px;
+        gap: 8px;
+    }
+    .zealluck-apk-logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .zealluck-apk-text h3 {
+        font-size: 12px;
+    }
+    .zealluck-apk-text p {
+        font-size: 10px;
+    }
+    .zealluck-apk-cta {
+        gap: 5px;
+    }
+    .zealluck-apk-cta button {
+        padding: 8px;
+    }
+}
+
+
+
+
+/* Small Mobile */
+@media (max-width: 380px) {
+    .zealluck-app-container {
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .zealluck-install-cta {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

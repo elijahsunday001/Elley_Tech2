@@ -1,0 +1,3659 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-family: 'Times New Roman', Times, serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+main {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.zealluck-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #1a1a1a;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.navbar-container {
+    width: min(100%, 1440px);
+    padding: 0 35px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.navbar-logo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.zealluck-navbar-links {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zealluck-navbar-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.zealluck-navbar-links ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zealluck-navbar-links a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #093480;
+    padding: 8px 5px 8px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.zealluck-navbar-links a:hover {
+    background: #cfcaca;
+    color: #DA0108;
+    transform: translateY(-3px);
+}
+.navbar-btns {
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 15px;
+}
+.navbar-btn {
+    margin: 0;
+    font-size: 1rem;
+    background: #ffffff;
+    color: #1a1a1a;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+}
+.login-btn {
+    padding: 10px 8px 10px;
+    background: transparent;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: color 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background: #2ECC71;
+    color: #ffffff;
+}
+.register-btn {
+    padding: 10px 8px 10px;
+    background: #093480;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background: transparent;
+    color: #093480;
+}
+.zealluck-mobile-navbar {
+    display: none;
+}
+/* Hero Section */
+.zealluck-hero-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.zealluck-hero-section *, .zealluck-hero-section *::before, .zealluck-hero-section *::after {
+    box-sizing: border-box;
+}
+.zealluck-hero-container {
+    width: 100%;
+    max-width: 1600px;
+    min-height: 620px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 56% 44%;
+    align-items: stretch;
+    background: #0875c9;
+    position: relative;
+}
+.zealluck-hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 55px 35px 35px clamp(30px, 6vw, 90px);
+    color: #ffffff;
+    background: linear-gradient(115deg, #0755a5 0%, #0879cf 65%, #168bdd 100%);
+}
+.zealluck-hero-content::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: clamp(15px, 3vw, 45px);
+    width: 4px;
+    height: 155px;
+    background: #e8b45c;
+    border-radius: 5px;
+}
+.zealluck-hero-eyebrow {
+    margin: 0 0 22px;
+    color: #e8b45c;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    line-height: 1.5;
+    text-transform: none;
+}
+.zealluck-hero-content h1 {
+    max-width: 700px;
+    margin: 0 0 22px;
+    color: #ffffff;
+    font-size: clamp(36px, 4.2vw, 64px);
+    font-weight: 800;
+    line-height: 1.08;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-hero-description {
+    max-width: 650px;
+    margin: 0 0 30px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.zealluck-hero-content strong {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 36px;
+}
+.hero-register-btn, .hero-login-btn {
+    min-height: 52px;
+    padding: 14px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-register-btn {
+    background: #e8b45c;
+    color: #0755a5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.hero-register-btn:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+.hero-login-btn {
+    background: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.65);
+}
+.hero-login-btn:hover {
+    background: #2ECC71;
+    color: #0755a5;
+    transform: translateY(-2px);
+}
+.hero-register-btn:focus-visible, .hero-login-btn:focus-visible {
+    outline: 3px solid #e8b45c;
+    outline-offset: 4px;
+}
+.zealluck-hero-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+.hero-stat-card {
+    min-width: 0;
+    padding: 18px 16px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.hero-stat-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-3px);
+}
+.hero-stat-card h2 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: clamp(22px, 2.3vw, 32px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+.hero-stat-card p {
+    margin: 0;
+    color: rgba(216, 205, 205, 0.916);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+.hero-stat-card:hover p {
+    color: #093480;
+}
+.zealluck-hero-visual {
+    min-width: 0;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 35px 35px 35px 15px;
+    background: #f5f7fa;
+}
+.zealluck-hero-visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    width: 75px;
+    background: #0879cf;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    pointer-events: none;
+}
+.zealluck-hero-image-card {
+    width: 100%;
+    max-width: 560px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 35px rgba(0, 35, 80, 0.10);
+}
+.hero-image-container {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+}
+.hero-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 440px;
+    object-fit: contain;
+    object-position: center;
+}
+.hero-image-caption {
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: #176da9;
+    color: #ffffff;
+}
+.hero-caption-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8b45c;
+    font-size: 20px;
+}
+.hero-caption-icon i {
+    color: inherit;
+    font-size: inherit;
+}
+.hero-image-caption p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* About Section */
+.zealluck-about-section {
+    width: 100%;
+    padding: 90px 35px;
+    background: #ffffff;
+    color: #26364a;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zealluck-about-section *, .zealluck-about-section *::before, .zealluck-about-section *::after {
+    box-sizing: border-box;
+}
+.zealluck-about-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: center;
+    gap: 65px;
+}
+.zealluck-about-content {
+    min-width: 0;
+    position: relative;
+    padding-left: 18px;
+    border-left: 3px solid #e8b45c
+}
+.zealluck-about-eyebrow {
+    margin: 0 0 20px;
+    color: #1769aa;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    line-height: 1.5;
+    text-transform: none;
+}
+.zealluck-about-content > h2 {
+    margin: 0 0 20px;
+    color: #153b70;
+    font-size: clamp(30px, 3.2vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-about-content > h2 span {
+    background: linear-gradient(90deg, #DA0108, #a80c3b, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-about-content > P:not(.zealluck-about-eyebrow) {
+    margin: 0 0 20px;
+    color: #667487;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.zealluck-about-features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin: 35px 0;
+}
+.about-feature-card {
+    min-width: 0;
+    min-height: 115px;
+    padding: 18px 15px;
+    background: #f8fafc;
+    border: 1px solid #edf1f5;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.about-feature-card:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(21, 59, 112, 0.9);
+}
+.about-feature-icon {
+    margin-bottom: 10px;
+    color: #e8b45c;
+    font-size: 20px;
+}
+.about-feature-icon i {
+    display: inline-flex;
+}
+.about-feature-card h3 {
+    margin: 0 0 6px;
+    color: #153b70;
+    font-size: 23px;
+    font-weight: 700;
+}
+.about-feature-card p {
+    margin: 0;
+    color: #7c8795;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.zealluck-about-cta {
+    margin-top: 30px;
+    padding: 24px 22px;
+    background: linear-gradient(110deg, #f5f8fc, #ffffff);
+    border-radius: 10px;
+    border: 1px solid #e8edfa;
+}
+.zealluck-about-cta h3 {
+    margin: 0 0 10px;
+    color: #153b70;
+    font-size: 21px;
+    font-weight: 800;
+}
+.zealluck-about-cta h3 b {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-about-cta p {
+    margin: 0 0 18px;
+    color: #667487;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 400px;
+}
+.about-register-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 13px 21px;
+    background: #1769aa;
+    color: #ffffff;
+    border: 1px solid #1769aa;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.about-register-btn i {
+    transition: transform 0.3s ease;
+}
+.about-register-btn:hover {
+    background: #104e83;
+    border-color: #104e83;
+    transform: translateY(-2px);
+}
+.about-register-btn:hover i {
+    transform: translateX(4px);
+}
+.about-register-btn:focus-visible {
+    outline: 3px solid #d9a441;
+    outline-offset: 4px;
+}
+.zealluck-about-visual {
+    min-width: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+.about-image-wrapper {
+    width: 100%;
+    min-height: 440px;
+    position: relative;
+    overflow: hidden;
+    background: #edf1f6;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(22, 48, 79, 0.10);
+}
+.about-image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+.about-vision-card, .about-mission-card {
+    position: absolute;
+    z-index: 2;
+    width: min(290px, 72%);
+    padding: 22px 24px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+.about-vision-card h3, .about-mission-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+.about-mission-card p, .about-vision-card p {
+    margin: 0;
+    color: rgba(210, 203, 203, 0.95);
+    font-size: 15px;
+    line-height: 1.3;
+}
+.about-vision-card {
+    top: 8%;
+    right: -10px;
+    background: linear-gradient(135deg, #1769aa, #093480);
+}
+.about-mission-card {
+    bottom: 8%;
+    left: -28px;
+    background: linear-gradient(135deg, #d5a05a, #a96d2b);
+}
+.about-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.about-card-icon i {
+    display: inline-block;
+}
+.about-mission-card i {
+    color: #093480;
+}
+.about-vision-card i {
+    color: #d5a05a;
+}
+.zealluck-features-section {
+    width: 100%;
+    padding: 65px 30px;
+    background: #f8f9fb;
+    box-sizing: border-box;
+}
+.zealluck-features-section *, .zealluck-features-section *::before, .zealluck-features-section *::after {
+    box-sizing: border-box;
+}
+.zealluck-features-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+.zealluck-feature-card {
+    min-width: 0;
+    min-height: 280px;
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #edf0f4;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(20, 43, 75, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #e2c68e;
+    box-shadow: 0 10px 25px rgba(20, 43, 75, 0.55);
+}
+.zealluck-feature-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f0df;
+    color: #153b70;
+    border-radius: 50%;
+    font-size: 21px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.zealluck-feature-card:hover .zealluck-feature-icon {
+    background: #153b70;
+    color: #ffffff;
+}
+.zealluck-feature-card h3 {
+    width: 100%;
+    margin: 0 0 12px;
+    color: #202b3c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    transition: color 0.3s ease;
+}
+.zealluck-feature-card:hover h3 {
+    color: #DA0108;
+}
+.zealluck-feature-card p {
+    margin: 0;
+    color: #697586;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    transform: color 0.3s ease;
+}
+.zealluck-feature-card:hover p {
+    color: #093480;
+}
+/* Promo Section */
+.zealluck-promo-section {
+    width: 100%;
+    padding: 55px 30px;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-promo-section *, .zealluck-promo-section *::before, .zealluck-promo-section *::after {
+    box-sizing: border-box;
+}
+.zealluck-promo-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.35fr;
+    align-items: center;
+    gap: 20px;
+}
+.zealluck-promo-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f5f7fa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.zealluck-promo-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: inherit;
+    transition: transform 0.3s ease;
+}
+.zealluck-promo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(9, 52, 128, 0.12);
+}
+.zealluck-promo-card:hover img {
+    transform: scale(1.08);
+}
+.baba-ajo-promo {
+    background: #ffffff;
+}
+.baba-ajo-promo img {
+    object-position: center;
+}
+.savings-promo {
+    background: #093480;
+}
+.savings-promo img {
+    object-position: center;
+}
+.community-promo {
+    background: #093480;
+}
+.community-promo img {
+  object-position: center;
+}
+/* Impact Section */
+.zealluck-impact-section {
+    width: 100%;
+    padding: 70px 30px 80px;
+    background: #f3f8fb;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-impact-section *, .zealluck-impact-section *::before, .zealluck-impact-section *::after {
+    box-sizing: border-box;
+}
+.zealluck-impact-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.zealluck-impact-header {
+    width: 100%;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.zealluck-impact-eyebrow {
+    margin: 0 0 14px;
+    color: #093480;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+.zealluck-impact-header h2 {
+    margin: 0;
+    color: #093480;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 700;
+}
+.zealluck-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+.zealluck-impact-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 155px;
+    padding: 25px 15px 28px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-bottom: 4px solid #e8b45c;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(9, 52, 128, 0.035);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-impact-card h3 {
+    margin: 0 0 10px;
+    color: #093480;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(25px, 2.5vw, 32px);
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+.zealluck-impact-card p {
+    margin: 0;
+    color: #626b78;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.zealluck-impact-card:hover {
+    transform: translateY(-5px);
+    border-bottom: none;
+    border-top: 4px solid #DA0108;
+    box-shadow: 0 10px 25px rgba(9, 52, 128, 0.10);
+}
+/* Services-Gallery Section */
+.zealluck-services-gallery {
+    width: 100%;
+    padding: 70px 30px 65px;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-services-gallery *, .zealluck-services-gallery *::before, .zealluck-services-gallery *::after {
+    box-sizing: border-box;
+}
+.zealluck-services-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.zealluck-services-header {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+.zealluck-services-eyebrow {
+    margin: 0 0 14px;
+    color: #093480;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.zealluck-services-eyebrow span {
+    padding: 4px 3px;
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-services-header h2 {
+    margin: 0;
+    color: #093480;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    width: 100%;
+    align-items: start;
+}
+.zealluck-gallery-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.zealluck-gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(9, 52, 128, 0.08);
+}
+.zealluck-gallery-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/4.6;
+    overflow: hidden;
+    background: #f5f7fa;
+    border-radius: 8px 8px 0 0;
+}
+.zealluck-gallery-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.45s ease;
+}
+.zealluck-gallery-card:hover img {
+    scale: 1.04;
+}
+.zealluck-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    padding: 0;
+    color: #093480;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 50%;
+    border: 2px solid #e8b45c;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+.zealluck-play-btn i {
+    margin-left: 3px;
+}
+.zealluck-play-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: 0 6px 18px rgba(9, 52, 128, 0.95);
+    border-color: #2ECC71;
+}
+.zealluck-play-btn:focus-visible {
+    outline: 3px solid #dba66a;
+    outline-offset: 4px;
+}
+.zealluck-gallery-caption {
+    padding: 17px 12px 20px;
+    text-align: left;
+}
+.zealluck-gallery-caption h3 {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+/* Main Services Section */
+.zealluck-services-section {
+    width: 100%;
+    padding: 100px 35px;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-services-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.zealluck-services-main-header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+.zealluck-services-main-eyebrow {
+    margin: 0 0 18px;
+    color: #093480;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.zealluck-services-main-eyebrow span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-services-main-header h2 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #093480;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.zealluck-services-description {
+    max-width: 800;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+}
+.zealluck-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    align-items: stretch;
+}
+.zealluck-service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    min-height: 340px;
+    padding: 45px 28px 35px;
+    background: #ffffff;
+    border: 1px solid #e8edfa;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(9, 52, 128, 0.035);
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.zealluck-service-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(9, 52, 128, 0.35);
+    box-shadow: 0 14px 32px rgba(9, 52, 128, 0.10);
+}
+.zealluck-service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 26px;
+    background: #f6f0e5;
+    border: 1px solid #e8b45c;
+    border-radius: 50%;
+    color: #093480;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-service-icon i {
+    font-size: 25px;
+    line-height: 1;
+}
+.zealluck-service-card:hover .zealluck-service-icon {
+    background: transparent;
+    color: #DA0108;
+    transform: scale(1.06);
+    border-color: #e8b45c;
+}
+.zealluck-service-card h3 {
+    margin: 0 0 18px;
+    color: #093480;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+.zealluck-service-card:hover h3 {
+    color: #DA0108;
+}
+.zealluck-service-card > p {
+    margin: 0 0 28px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.zealluck-service-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: auto;
+    padding: 8px 0;
+    color: #093480;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+.zealluck-service-link i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.zealluck-service-link:hover {
+    color: #DA0108;
+    gap: 14px;
+}
+.zealluck-service-link:hover i {
+    transform: translateX(3px);
+}
+/* Values Section */
+.zealluck-values-section {
+    width: 100%;
+    padding: 90px 35px;
+    background: #f3f8fb;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zealluck-values-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.zealluck-values-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.zealluck-values-eyebrow {
+    color: #244f7d;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 18px;
+}
+.zealluck-values-header h2 {
+    color: #093480;
+    font-size: clamp(25px, 3vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-values-header h2 span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.zealluck-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+.zealluck-value-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+    min-height: 200px;
+    padding: 30px 20px;
+    background: #ffffff;
+    border: 1px solid #edf0f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(20, 42, 68, 0.025);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-value-card:hover {
+    transform: translateY(-6px);
+    border-color: #e4cba0;
+    box-shadow: 0 12px 28px rgba(20, 42, 68, 0.08);
+}
+.zealluck-value-icon {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    background: #f7f0df;
+    border-radius: 50%;
+    color: #244f7d;
+    font-size: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.zealluck-value-card:hover .zealluck-value-icon {
+    background: #244f7d;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+.zealluck-value-card h3 {
+    color: #093480;
+    font-size: 20px;
+    font-weight: 700;
+    line-break: 1.3;
+    margin: 0 0 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+.zealluck-value-card:hover h3 {
+    color: #DA0108;
+}
+.zealluck-value-card p {
+    max-width: 300px;
+    color: #68717c;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+/* Support Section */
+.zealluck-support-section {
+    width: 100%;
+    padding: 90px 30px;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-support-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.zealluck-support-header {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+.zealluck-support-eyebrow {
+    margin: 0 0 20px;
+    color: #315b80;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.zealluck-support-eyebrow span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-support-header h2 {
+    margin: 0;
+    color: #093480;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-support-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+.zealluck-support-card {
+    min-width: 0;
+    padding: 35px 30px;
+    background: #ffffff;
+    border: 1px solid #e6eaf0;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(23, 47, 77, 0.025);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.zealluck-support-card:hover {
+    border-color: #c9d7e7;
+    box-shadow: 0 12px 28px rgba(23, 47, 77, 0.25);
+    transform: translateY(-4px);
+}
+.zealluck-support-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+.zealluck-support-icon {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 38px;
+    color: #315b80;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+.zealluck-support-card:hover .zealluck-support-icon {
+    color: #093480;
+}
+.zealluck-support-card-header h3 {
+    margin: 0;
+    color: #315b80;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+.zealluck-support-card:hover h3 {
+    color: #DA0108;
+}
+.zealluck-support-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.zealluck-support-list li {
+    color: #626b78;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+/* Programs Section */
+.zealluck-programs-section {
+    width: 100%;
+    padding: 85px 5% 90px;
+    background: #F2F7FB;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-programs-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.zealluck-programs-header {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+.zealluck-programs-eyebrow {
+    margin: 0 0 22px;
+    color: #315b80;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.zealluck-programs-eyebrow span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-programs-header h2 {
+    margin: 0;
+    color: #093480;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+.zealluck-program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    min-height: 170px;
+    padding: 32px 25px 35px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #e8ebef;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(23, 47, 77, 0.025);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.zealluck-program-card:hover {
+    transform: translateY(-5px);
+    border-color: #e8b45c;
+    box-shadow: 0 12px 28px rgba(23, 47, 77, 0.075);
+}
+.zealluck-program-number {
+    display: block;
+    margin-bottom: 20px;
+    color: #e8b45c;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+.zealluck-program-card h3 {
+    margin: 0 0 5px;
+    color: #093480;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.zealluck-program-card p {
+    max-width: 360px;
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+/* Why Choose Section */
+.zealluck-why-section {
+    width: 100%;
+    padding: 90px 5%;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-why-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.zealluck-why-visual {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zealluck-why-image {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.36);
+}
+.zealluck-why-content {
+    width: 100%;
+}
+.zealluck-why-eyebrow {
+    margin: 0 0 18px;
+    color: #315b80;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.zealluck-why-eyebrow span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-why-content h2 {
+    margin: 0 0 35px;
+    color: #093480;
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-why-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 35px;
+}
+.zealluck-why-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.zealluck-why-check {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #e8b27e;
+    border-radius: 50%;
+    font-size: 13px;
+}
+.zealluck-why-benefit p {
+    margin: 0;
+    color: #687684;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.zealluck-why-benefit strong {
+    display: inline;
+    margin-right: 5px;
+    color: #315d87;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-why-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background: #315f91;
+    border: 2px solid #315f91;
+    border-radius: 9px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-why-btn i {
+    transition: transform 0.3s ease;
+}
+.zealluck-why-btn:hover {
+    color: #ffffff;
+    background: #23486f;
+    border-color: #23486f;
+    box-shadow: 0 8px 20px rgba(35, 72, 111, 0.95);
+    transform: translateY(-2px);
+}
+.zealluck-why-btn:hover i {
+    transform: translateX(4px);
+}
+.zealluck-why-btn:focus-visible {
+    outline: 3px solid #e8b27e;
+}
+/* Success Stories Section */
+.zealluck-success-section {
+    width: 100%;
+    padding: 90px 5%;
+    background: #c9d7e7;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zealluck-success-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.zealluck-success-header {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+.zealluck-success-eyebrow {
+    margin: 0 0 25px;
+    color: #315d88;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+.zealluck-success-eyebrow span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-success-header h2 {
+    margin: 0 auto;
+    max-width: 700px;
+    color: #093480;
+    font-size: clamp(28px, 4vw, 35px);
+    line-height: 1.2;
+    text-transform: none;
+    letter-spacing: -0.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-success-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+.zealluck-success-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 145px;
+    padding: 32px 35px;
+    background-color: #ffffff;
+    border: 1px solid #e8edf2;
+    border-top: 4px solid #dba77c;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(23, 47, 77, 0.035);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease;
+}
+.zealluck-success-card:hover {
+    transform: translateY(-5px);
+    border-top-color: #315d88;
+    box-shadow: 0 12px 28px rgba(23, 47, 77, 0.095);
+}
+.zealluck-success-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.zealluck-success-content p {
+    margin: 18px 0 0;
+    color: #65717e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.zealluck-success-content strong {
+    display: block;
+    margin-top: auto;
+    color: #093480;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+.zealluck-success-card:hover strong {
+    color: #e8b45c;
+}
+/* Network Section */
+.zealluck-network-section {
+    width: 100%;
+    padding: 90px 30px;
+    background: #f8f9fb;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zealluck-network-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.zealluck-network-header {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+.zealluck-network-eyebrow {
+    margin: 0 0 18px;
+    color: #315f8f;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.zealluck-network-eyebrow span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-network-header h2 {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #093480;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-network-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+.zealluck-network-card {
+    min-width: 0;
+    padding: 30px 24px 34px;
+    background: #ffffff;
+    border: 1px solid #e9edf2;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-network-card:hover {
+    transform: translateY(-6px);
+    border-color: #d6e1ed;
+    box-shadow: 0 12px 30px rgba(23, 43, 70, 0.08);
+}
+.zealluck-network-image {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f2e8d8;
+    border: 3px solid #f1e4d0;
+}
+.zealluck-network-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.zealluck-network-card:hover .zealluck-network-image img {
+    transform: scale(1.08);
+}
+.zealluck-network-card h3 {
+    margin: 0 0 12px;
+    color: #263b55;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+.zealluck-network-card:hover > h3 {
+    color: #DA0108;
+}
+.zealluck-network-card p {
+    margin: 0;
+    color: #737f8d;
+    font-size: 17px;
+    line-height: 1.3;
+}
+/* Blog Section */
+.zealluck-blog-section {
+    width: 100%;
+    padding: 90px 30px;
+    background: #f8f9fb;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-blog-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.zealluck-blog-header {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.zealluck-blog-eyebrow {
+    margin: 0 0 16px;
+    color: #315f8f;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.zealluck-blog-header h2 {
+    margin: 0;
+    color: #093480;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-blog-header h2 span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+.zealluck-blog-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e8edf2;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(23, 43, 70, 0.03);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-blog-card:hover {
+    transform: translateY(-6px);
+    border-color: #e8b45c;
+    box-shadow: 0 14px 32px rgba(23, 43, 70, 0.09);
+}
+.zealluck-blog-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #edf1f5;
+}
+.zealluck-blog-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+.zealluck-blog-card:hover .zealluck-blog-image img {
+    transform: scale(1.05);
+}
+.zealluck-blog-content {
+    flex: 1;
+    padding: 26px 24px 30px;
+}
+.zealluck-blog-content h3 {
+    margin: 0 0 12px;
+    color: #203650;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+.zealluck-blog-card:hover .zealluck-blog-content h3 {
+    color: #315f8f;
+}
+.zealluck-blog-content p {
+    margin: 0;
+    color: #737f8d;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Community Section */
+.zealluck-community-section {
+    width: 100%;
+    background: #f8f9fb;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-community-container {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1250px;
+    min-height: 520px;
+    margin: 0 auto;
+    padding: 65px 35px 45px;
+    overflow: hidden;
+    background: #17385c;
+}
+.zealluck-community-background {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+.zealluck-community-background img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.zealluck-background-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 35, 60, 0.76);
+    z-index: 1;
+}
+.zealluck-community-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    color: #ffffff;
+}
+.zealluck-community-header {
+    max-width: 800px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+.zealluck-community-eyebrow {
+    margin: 0 0 16px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.zealluck-community-eyebrow span {
+    margin-right: 6px;
+    background: linear-gradient(90deg, #DA0108, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-community-header h2 {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-community-grid {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0 auto;
+    gap: 15px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zealluck-community-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 150px;
+    padding: 10px 8px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-community-card:hover {
+    background: rgba(255, 255, 255, 0.19);
+    border-color: rgba(240, 195, 139, 0.8);
+    transform: translateX(3px);
+}
+.zealluck-community-card h3 {
+    margin: 0 0 10px;
+    color: #e8b45c;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-community-card p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.zealluck-community-bottom {
+    max-width: 950px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+.zealluck-community-bottom span {
+    background: linear-gradient(90deg, #DA0108, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+/* Zealluck cta Section */
+.zealluck-cta-section {
+    width: 100%;
+    padding: 85px 5%;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-cta-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.zealluck-cta-header {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+.zealluck-cta-eyebrow {
+    margin: 0 0 20px;
+    color: #315b85;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.zealluck-cta-header h2 {
+    margin: 0 0 14px;
+    color: #093480;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-cta-section h2 span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-cta-description {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #737f8d;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 0.5;
+}
+.zealluck-cta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+.zealluck-cta-card {
+    min-width: 0;
+    padding: 35px 32px;
+    background-color: #ffffff;
+    border: 1px solid #e8ebef;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(23, 43, 70, 0.025);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.zealluck-cta-card:hover {
+    transform: translateY(-5px);
+    border-color: #e8b45c;
+    box-shadow: 0 12px 28px rgba(23, 43, 70, 0.08);
+}
+.zealluck-cta-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f0df;
+    border-radius: 50%;
+    color: #315b80;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.zealluck-cta-card:hover .zealluck-cta-icon {
+    background-color: #093480;
+    color: #e8b45c;
+}
+.zealluck-cta-icon i {
+    line-height: 1;
+}
+.zealluck-cta-card h3 {
+    margin: 0 0 14px;
+    color: #093480;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.zealluck-cta-card h3 span {
+    background: linear-gradient(90deg, #DA0108, #093480);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.zealluck-cta-card > p {
+    margin: 0 0 20px;
+    color: #737f8d;
+    font-size: 16px;
+}
+.zealluck-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 48px;
+    padding: 0 25px;
+    background-color: #28649d;
+    border: 1px solid #28649d;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.zealluck-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(35, 88, 152, 0.3);
+}
+.zealluck-cta-btn i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+.zealluck-cta-btn:hover i {
+    transform: translateX(5px);
+}
+.cta-register-btn {
+    display: inline-flex;
+    background-color: #093480;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.cta-register-btn:hover {
+    background-color: transparent;
+    color: #093480;
+}
+.cta-login-btn {
+    background-color: transparent;
+    color: #093480;
+}
+.cta-login-btn:hover {
+    background-color: #2ECC71;
+    color: #ffffff;
+}
+.zealluck-cta-btn:focus-visible {
+    outline: 3px solid #e4bd76;
+    outline-offset: 4px;
+}
+/* Footer Section */
+.zealluck-footer-section {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(135deg, #092b50, #064477, #082c52);
+    color: #ffffff;
+    padding: 65px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.zealluck-footer-brand {
+    width: 100%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.zealluck-footer-logo {
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.zealluck-footer-logo img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    object-fit: contain;
+}
+.zealluck-footer-tagline {
+    color: #e8b45c;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.zealluck-footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.zealluck-footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.09);
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.zealluck-footer-socials a:hover {
+    background: #e7a85b;
+    color: #092b50;
+    transform: translateY(-4px);
+}
+.zealluck-footer-main {
+    display: grid;
+    grid-template-columns: 0.85fr 1.05fr 1.25fr 1fr;
+    gap: 30px;
+    padding: 38px 0 45px;
+}
+.zealluck-footer-column {
+    min-width: 0;
+}
+.zealluck-footer-column h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    letter-spacing: 0.3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.zealluck-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.zealluck-footer-links li {
+    margin-bottom: 13px;
+}
+.zealluck-footer-links a {
+    display: inline-block;
+    color: #bcc7d5;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.zealluck-footer-links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+.zealluck-footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.zealluck-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+.zealluck-contact-item i {
+    color: #f0b65f;
+    font-size: 19px;
+    margin-top: 5px;
+    min-width: 20px;
+}
+.zealluck-contact-item p {
+    color: #e0eaf4;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+.zealluck-contact-item a {
+    color: #e0eaf4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.zealluck-contact-item a:hover {
+    color: #f0b65f;
+}
+.zealluck-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.zealluck-trust-item {
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 4px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.zealluck-trust-item i {
+    color: #f0b65f;
+    font-size: 19px;
+}
+.zealluck-trust-item span {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.zealluck-trust-item:hover {
+    background: rgba(255, 255, 255, 0.17);
+    transform: translateY(-3px);
+}
+.zealluck-footer-trust > p {
+    color: #dce7f2;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+.zealluck-footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+.zealluck-footer-bottom > p {
+    color: #cbd9e8;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.zealluck-footer-bottom b {
+    color: #DA0108;
+    font-size: 17px;
+    margin: 0;
+}
+.zealluck-footer-cta a {
+    display: inline-block;
+    background: linear-gradient(90deg, #DA0108, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.zealluck-footer-cta a:hover {
+    background: linear-gradient(90deg, #ffffff, #DA0108);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+/* Tablets */
+@media (max-width: 1000px) {
+    /* Navigation Bar */
+    .navbar-container {
+        padding: 0 25px;
+        gap: 20px;
+    }
+    .navbar-logo img {
+        width: 90px;
+    }
+    .zealluck-navbar-links ul {
+        gap: 20px;
+    }
+    .zealluck-navbar-links a {
+        font-size: 16px;
+    }
+    .navbar-btns {
+        gap: 12px;
+    }
+    .register-btn {
+        min-width: auto;
+        padding: 13px 19px;
+    }
+    /* Hero Section */
+    .zealluck-hero-container {
+        grid-template-columns: 54% 46%;
+        min-height: 560px;
+    }
+    .zealluck-hero-content {
+        padding: 45px 25px 30px 45px;
+    }
+    .zealluck-hero-content::before {
+        left: 18px;
+        top: 35px;
+        height: 125px;
+    }
+    .zealluck-hero-content h1 {
+        font-size: clamp(34px, 4.5vw, 48px);
+        letter-spacing: -0.8px;
+    }
+    .zealluck-hero-description {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .zealluck-hero-visual {
+        padding: 25px 20px 25px 10px;
+    }
+    .zealluck-hero-stats {
+        gap: 8px;
+    }
+    .hero-stat-card {
+        padding: 14px 10px;
+    }
+    .hero-stat-card h2 {
+        font-size: 23px;
+    }
+    .hero-stat-card p {
+        font-size: 11px;
+    }
+    /* About Section */
+    .zealluck-about-section {
+        padding: 70px 25px;
+    }
+    .zealluck-about-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+        gap: 35px;
+    }
+    .zealluck-about-content {
+        padding-left: 14px;
+    }
+    .zealluck-about-content > h2 {
+        font-size: clamp(29px, 3.5vw, 38px);
+    }
+    .zealluck-about-content > p:not(.zealluck-about-eyebrow) {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .zealluck-about-features {
+        gap: 9px;
+    }
+    .about-feature-card {
+        padding: 14px 10px;
+    }
+    .about-feature-card h3 {
+        font-size: 20px;
+    }
+    .about-image-wrapper, .about-image-wrapper img {
+        min-height: 380px;
+    }
+    .about-vision-card, .about-mission-card {
+        width: min(255px, 78%);
+        padding: 18px;
+    }
+    .about-vision-card {
+        right: -5px;
+    }
+    .about-mission-card {
+        left: -12px;
+    }
+    .zealluck-features-section {
+        padding: 55px 25px;
+    }
+    .zealluck-features-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .zealluck-feature-card {
+        min-height: 245px;
+        padding: 25px 18px;
+    }
+    .zealluck-feature-card h3 {
+        font-size: 18px;
+    }
+    .zealluck-feature-card p {
+        font-size: 15px;
+    }
+    /* Promo Section */
+    .zealluck-promo-section {
+        padding: 45px 25px;
+    }
+    .zealluck-promo-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+    .zealluck-promo-card {
+        height: 230px;
+    }
+    /* Impact Section */
+    .zealluck-impact-section {
+        padding: 60px 25px 70px;
+    }
+    .zealluck-impact-grid {
+        gap: 14px;
+    }
+    .zealluck-impact-card {
+        padding: 22px 10px 25px;
+        min-height: 145px;
+    }
+    .zealluck-impact-card p {
+        font-size: 14px;
+    }
+    /* Service-Gallery-Section */
+    .zealluck-services-gallery {
+        padding: 60px 25px;
+    }
+    .zealluck-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+    .zealluck-gallery-image {
+        aspect-ratio: 4/3.5;
+    }
+    .zealluck-gallery-caption h3 {
+        font-size: 16px;
+    }
+    /* Service Main Section */
+    .zealluck-services-section {
+        padding: 85px 25px;
+    }
+    .zealluck-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+    .zealluck-services-main-header {
+        margin-bottom: 50px;
+    }
+    .zealluck-service-card {
+        min-height: 320px;
+        padding: 38px 25px 30px;
+    }
+    /* Values Section */
+    .zealluck-values-section {
+        padding: 75px 25px;
+    }
+    .zealluck-values-container {
+        margin-bottom: 40px;
+    }
+    .zealluck-values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+    .zealluck-value-card h3 {
+        font-size: 20px;
+    }
+    .zealluck-value-card p {
+        font-size: 16px;
+    }
+    /* Support Section */
+    .zealluck-support-section {
+        padding: 75px 30px;
+    }
+    .zealluck-support-header {
+        margin-bottom: 45px;
+    }
+    .zealluck-support-grid {
+        gap: 22px;
+    }
+    .zealluck-support-card {
+        padding: 30px 24px;
+    }
+    .zealluck-support-card-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .zealluck-support-list li {
+        font-size: 16px;
+    }
+    /* Programs Section */
+    .zealluck-programs-section {
+        padding: 70px 5%;
+    }
+    .zealluck-programs-grid {
+        gap: 18px;
+    }
+    .zealluck-program-card {
+        padding: 28px 18px;
+        min-height: 160px;
+    }
+    .zealluck-program-number {
+        font-size: 34px;
+    }
+    .zealluck-program-card h3 {
+        font-size: 17px;
+    }
+    .zealluck-program-card p {
+        font-size: 12px;
+    }
+    /* Why Choose Section */
+    .zealluck-why-section {
+        padding: 80px 5%;
+    }
+    .zealluck-why-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+    .zealluck-why-content h2 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    .zealluck-why-benefits {
+        gap: 20px;
+    }
+    /* Success Stories Section */
+    .zealluck-success-section {
+        padding: 75px 4%;
+    }
+    .zealluck-success-header {
+        margin-bottom: 45px;
+    }
+    .zealluck-success-grid {
+        gap: 15px;
+    }
+    .zealluck-success-card {
+        padding: 25px;
+    }
+    .zealluck-success-content p {
+        font-size: 17px;
+    }
+    .zealluck-success-content strong {
+        font-size: 19px;
+    }
+    /* Network Section */
+    .zealluck-network-section {
+        padding: 75px 22px;
+    }
+    .zealluck-network-grid {
+       gap: 15px;
+    }
+    .zealluck-blog-section {
+        padding: 75px 22px;
+    }
+    .zealluck-blog-grid {
+        gap: 20px;
+    }
+    .zealluck-blog-header {
+        margin-bottom: 40px;
+    }
+    .zealluck-blog-content {
+        padding: 22px 20px 26px;
+    }
+    .zealluck-blog-content h3 {
+        font-size: 19px;
+    }
+    /* Community Section */
+    .zealluck-community-section {
+        padding: 60px 22px;
+    }
+    .zealluck-community-container {
+        padding: 40px 25px 30px;
+    }
+    .zealluck-community-grid {
+        max-width: 850px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .zealluck-community-header {
+        margin-bottom: 35px;
+    }
+    .zealluck-community-card {
+        min-height: 130px;
+    }
+    .zealluck-community-bottom {
+        max-width: 850px;
+    }
+    /* Footer Section */
+    .zealluck-footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px;
+    }
+}
+
+/* Mobile Screens*/
+/* Large Mobile */
+@media (max-width: 760px) {
+    /* Navigation Bar */
+    .navbar-container {
+        min-height: 78px;
+        padding: 0 20px;
+    }
+    .navbar-logo img {
+        width: 90px;
+    }
+    .navbar-container > .zealluck-navbar-links, .navbar-container > .navbar-btns {
+        display: none;
+    }
+    .zealluck-mobile-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+    .mobile-toggle:hover {
+        background-color: #f1f5f9;
+    }
+    .mobile-toggle img {
+        display: block;
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+    .mobile-navbar-links {
+        display: none;
+        position: absolute;
+        top: calc(100% + 25px);
+        right: -20px;
+        width: 220px;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+    .mobile-navbar-links.active {
+        display: flex;
+    }
+    .mobile-navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+    }
+    .mobile-navbar-links ul li a {
+        display: block;
+        width: 100%;
+        padding: 13px 12px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    .mobile-navbar-links ul li a:hover {
+        background-color: #f1f6fb;
+    }
+    /* Hero Section */
+    .zealluck-hero-container {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+    .zealluck-hero-content {
+        width: 100%;
+        padding: 45px 22px 28px;
+    }
+    .zealluck-hero-content::before {
+        top: 24px;
+        left: 10px;
+        height: 90px;
+        width: 3px;
+    }
+    .zealluck-hero-eyebrow {
+        margin-bottom: 18px;
+        font-size: 13px;
+    }
+    .zealluck-hero-content h1 {
+        max-width: 600px;
+        margin-bottom: 18px;
+        font-size: clamp(34px, 8vw, 48px);
+        line-height: 1.12;
+        letter-spacing: -0.7px;
+    }
+    .zealluck-hero-description {
+        margin-bottom: 24px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .zealluck-hero-buttons {
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+    .hero-register-btn, .hero-login-btn {
+        min-height: 48px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .zealluck-hero-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+    .hero-stat-card {
+        padding: 13px 9px;
+        border-radius: 8px;
+    }
+    .hero-stat-card h2 {
+        margin-bottom: 8px;
+        font-size: clamp(17px, 4.5vw, 24px);
+    }
+    .hero-stat-card p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    .zealluck-hero-visual {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 20px;
+    }
+    .zealluck-hero-visual::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        height: 35px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+    }
+    .zealluck-hero-image-card {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+    }
+    .hero-image-container img {
+        max-height: none;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .hero-image-caption {
+        min-height: 58px;
+        padding: 13px 15px;
+        gap: 10px;
+    }
+    .hero-caption-icon {
+        font-size: 18px;
+    }
+    .hero-image-caption p {
+        font-size: 13px;
+    }
+    /* About Section */
+    .zealluck-about-section {
+        padding: 55px 20px;
+    }
+    .zealluck-about-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+    }
+    .zealluck-about-content {
+        padding-left: 14px;
+    }
+    .zealluck-about-eyebrow {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .zealluck-about-content > h2 {
+        font-size: clamp(29px, 7vw, 40px);
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+    .zealluck-about-content > p:not(.zealluck-about-eyebrow) {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .zealluck-about-features {
+        gap: 10px;
+        margin: 25px 0;
+    }
+    .about-feature-card {
+        min-height: 105px;
+        padding: 14px 10px;
+    }
+    .about-feature-icon {
+        font-size: 19px;
+    }
+    .about-feature-card h3 {
+        font-size: 19px;
+    }
+    .about-feature-card p {
+        font-size: 11px;
+    }
+    .zealluck-about-cta {
+        margin-top: 25px;
+        padding: 20px 16px;
+    }
+    .zealluck-about-cta h3 {
+        font-size: 19px;
+    }
+    .zealluck-about-visual {
+        width: 100%;
+        padding: 20px 0 25px;
+        margin-top: 5px;
+    }
+    .about-image-wrapper {
+        min-height: 340px;
+    }
+    .about-image-wrapper img {
+        min-height: 340px;
+        object-fit: cover;
+    }
+    .about-vision-card, .about-mission-card {
+        width: min(260px, 75%);
+        padding: 17px;
+    }
+    .about-vision-card {
+        top: 8px;
+        right: -5px;
+    }
+    .about-mission-card {
+        bottom: 8px; 
+        left: -5px;
+    }
+    .about-vision-card h3, .about-mission-card h3 {
+        font-size: 17px;
+    }
+    .about-vision-card p, .about-mission-card p {
+        line-height: 1.5;
+    }
+    .about-card-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    /* Features Section */
+    .zealluck-features-section {
+        padding: 45px 20px;
+    }
+    .zealluck-features-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 20px;
+    }
+    .zealluck-feature-card {
+        min-height: 235px;
+        padding: 25px 16px;
+    }
+    .zealluck-feature-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .zealluck-feature-card h3 {
+        font-size: 17px;
+    }
+    .zealluck-feature-card p {
+        max-width: 300px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    /* Promo Section */
+    .zealluck-promo-section {
+        padding: 35px 20px;
+    }
+    .zealluck-promo-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+    .zealluck-promo-card {
+        height: 220px;
+    }
+    .community-promo {
+        grid-column: 1/-1;
+        height: 250px;
+    }
+    /* Impact Section */
+    .zealluck-impact-section {
+        padding: 55px 22px 60px;
+    }
+    .zealluck-impact-header {
+        margin-bottom: 35px;
+    }
+    .zealluck-impact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+    .zealluck-impact-card {
+        min-height: 140px;
+    }
+    .zealluck-impact-card h3 {
+        font-size: 30px;
+    }
+    /* Why Choose Section */
+    .zealluck-why-section {
+        padding: 65px 6%;
+    }
+    .zealluck-why-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .zealluck-why-visual {
+        order: 1;
+    }
+    .zealluck-why-content {
+        order: 2;
+    }
+    .zealluck-why-image {
+        max-width: 500px;
+        border-radius: 16px;
+    }
+    .zealluck-why-eyebrow {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+    .zealluck-why-content h2 {
+        margin-bottom: 28px;
+        font-size: 30px;
+    }
+    .zealluck-why-benefits {
+        gap: 22px;
+        margin-bottom: 30px;
+    }
+    .zealluck-why-benefit {
+        gap: 13px;
+    }
+    .zealluck-why-check {
+        flex-basis: 28px;
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+    .zealluck-why-benefit p {
+        font-size: 15px;
+    }
+    .zealluck-why-btn {
+        font-size: 16px;
+    }
+    /* Blog Section */
+    .zealluck-blog-section {
+        padding: 65px 18px;
+    }
+    .zealluck-blog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+    /* Community Section */
+    .zealluck-community-section {
+        padding: 45px 15px;
+    }
+    .zealluck-community-grid {
+        max-width: 650px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+    /* Zealluck cta Section */
+    .zealluck-cta-section {
+        padding: 75px 5%;
+    }
+    .zealluck-cta-header {
+        margin-bottom: 40px;
+    }
+    .zealluck-cta-description {
+        line-height: 1.3;
+    }
+    .zealluck-cta-grid {
+        gap: 20px;
+    }
+    .zealluck-cta-card {
+        padding: 28px 24px;
+    }
+    .zealluck-cta-card h3 {
+        font-size: 19px;
+    }
+    .zealluck-cta-card > p {
+        font-size: 15px;
+    }
+}
+
+/* Medium Mobile */
+@media (max-width: 520px) {
+    .zealluck-impact-section {
+        padding: 45px 16px 50px;
+    }
+    .zealluck-impact-header {
+        margin-bottom: 28px;
+    }
+    .zealluck-impact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+    .zealluck-impact-card {
+        min-height: 135px;
+        padding: 20px 10px 23px;
+    }
+    .zealluck-impact-card:last-child {
+        grid-column: 1/-1;
+        width: calc(50% - 7px);
+        justify-self: center;
+    }
+    /* Service-Gallery Section */
+    .zealluck-services-gallery {
+        padding: 45px 16px;
+    }
+    .zealluck-services-header {
+        margin-bottom: 28px;
+    }
+    .zealluck-services-eyebrow {
+        font-size: 12px;
+    }
+    .zealluck-services-header h2 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+    .zealluck-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .zealluck-gallery-image {
+        aspect-ratio: 4/3;
+    }
+    .zealluck-play-btn {
+        width: 54px;
+        height: 54px;
+        font-size: 16px;
+    }
+    .zealluck-gallery-caption {
+        padding: 13px 5px 8px;
+    }
+    .zealluck-gallery-caption h3 {
+        font-size: 15px;
+    }
+    /* Services Main Section */
+    .zealluck-services-section {
+        padding: 65px 18px;
+    }
+    .zealluck-services-main-header {
+        margin-bottom: 35px;
+    }
+    .zealluck-services-main-eyebrow {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .zealluck-services-main-header h2 {
+        font-size: 27px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+    .zealluck-services-description {
+        font-size: 17px;
+    }
+    .zealluck-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .zealluck-service-card {
+        min-height: 300px;
+        padding: 35px 24px 30px;
+    }
+    .zealluck-service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+    }
+    .zealluck-service-icon i {
+        font-size: 20px;
+    }
+    .zealluck-service-card h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .zealluck-service-card > p {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 22px;
+    }
+    .zealluck-service-link {
+        font-size: 19px;
+    }
+    /* Value Section */
+    .zealluck-values-section {
+        padding: 60px 18px;
+    }
+    .zealluck-values-header {
+        margin-bottom: 32px;
+    }
+    .zealluck-values-eyebrow {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .zealluck-values-header h2 {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+    .zealluck-values-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .zealluck-value-card {
+        min-height: auto;
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+    .zealluck-value-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .zealluck-value-card h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .zealluck-value-card p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    /* Support Section */
+    .zealluck-support-section {
+        padding: 60px 20px;
+        overflow: auto;
+    }
+    .zealluck-support-header {
+        margin-bottom: 35px;
+    }
+    .zealluck-support-eyebrow {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .zealluck-support-header h2 {
+        font-size: 27px;
+        letter-spacing: -0.5px;
+    }
+    .zealluck-support-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .zealluck-support-card {
+        padding: 28px 22px;
+    }
+    .zealluck-support-card-header {
+        margin-bottom: 22px;
+    }
+    .zealluck-support-card-header h3 {
+        font-size: 23px;
+    }
+    .zealluck-support-icon {
+        font-size: 25px;
+    }
+    .zealluck-support-list {
+        gap: 12px;
+    }
+    .zealluck-support-list li {
+        font-size: 17px;
+    }
+    /* Programs Section */
+    .zealluck-programs-section {
+        padding: 60px 20px;
+    }
+    .zealluck-programs-header {
+        margin-bottom: 35px;
+    }
+    .zealluck-programs-eyebrow {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .zealluck-programs-header h2 {
+        font-size: 27px;
+    }
+    .zealluck-programs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .zealluck-program-card {
+        min-height: auto;
+        padding: 30px 22px;
+    }
+    .zealluck-program-number {
+        margin-bottom: 16px;
+        font-size: 40px;
+    }
+    .zealluck-program-card h3 {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+    .zealluck-program-card p {
+        max-width: 400px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    /* Success Stories Section */
+    .zealluck-success-section {
+        padding: 60px 20px;
+    }
+    .zealluck-success-header {
+        margin-bottom: 35px;
+    }
+    .zealluck-success-eyebrow {
+        margin-bottom: 16px;
+        font-size: 13px;
+    }
+    .zealluck-success-header h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .zealluck-success-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .zealluck-success-card {
+        min-height: 150px;
+        padding: 25px 24px;
+        border-radius: 10px;
+    }
+    .zealluck-success-content {
+        gap: 20px;
+    }
+    .zealluck-success-content p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .zealluck-success-content strong {
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
+    /* Network Section */
+    .zealluck-network-section {
+        padding: 60px 18px;
+    }
+    .zealluck-network-header {
+        margin-bottom: 30px;
+    }
+    .zealluck-network-header h2 {
+        font-size: 30px;
+    }
+    .zealluck-network-eyebrow {
+        font-size: 14px;
+    }
+    .zealluck-network-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .zealluck-network-card {
+        padding: 28px 20px;
+    }
+    .zealluck-network-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 18px;
+    }
+    .zealluck-network-card h3 {
+        font-size: 19px;
+    }
+    .zealluck-network-card p {
+        font-size: 16px;
+    }
+    /* Blog Section */
+    .zealluck-blog-section {
+        padding: 60px 18px;
+    }
+    .zealluck-blog-header {
+        margin-bottom: 32px;
+    }
+    .zealluck-blog-header h2 {
+        font-size: 30px;
+    }
+    .zealluck-blog-eyebrow {
+        font-size: 14px;
+    }
+    .zealluck-blog-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .zealluck-blog-image {
+        aspect-ratio: 16 / 9;
+    }
+    .zealluck-blog-content {
+        padding: 22px 20px 26px;
+    }
+    .zealluck-blog-content h3 {
+        font-size: 20px;
+    }
+    .zealluck-blog-content p {
+        font-size: 15px;
+    }
+    /* Community Section */
+    .zealluck-community-section {
+        padding: 40px 10px;
+    }
+    .zealluck-community-container {
+        min-height: auto;
+        padding: 40px 15px 30px;
+    }
+    .zealluck-community-header {
+        margin-bottom: 28px;
+    }
+    .zealluck-community-eyebrow {
+        font-size: 13px;
+    }
+    .zealluck-community-header h2 {
+        font-size: 27px;
+    }
+    .zealluck-community-grid {
+        max-width: 450px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+    .zealluck-community-card {
+        min-height: 110px;
+        padding: 10px 6px;
+        border-radius: 10px;
+    }
+    .zealluck-community-card h3 {
+        font-size: 25px;
+    }
+    .zealluck-community-card p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .zealluck-community-bottom {
+        max-width: 450px;
+        font-size: 14px;
+    }
+    /* Zealluct cta Section */
+    .zealluck-cta-section {
+        padding: 55px 6%;
+    }
+    .zealluck-cta-header {
+        margin-bottom: 32px;
+    }
+    .zealluck-cta-eyebrow {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .zealluck-cta-header h2 {
+        font-size: 30px;
+    }
+    .zealluck-cta-description {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .zealluck-cta-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .zealluck-cta-card {
+        padding: 28px 24px;
+    }
+    .zealluck-cta-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+    .zealluck-cta-card h3 {
+        font-size: 20px;
+    }
+    .zealluck-cta-btn {
+        width: 90%;
+        min-height: 46px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    /* Footer Section */
+    .zealluck-footer-section {
+        padding: 45px 6% 20px;
+    }
+    .zealluck-footer-logo {
+        display: block;
+    }
+    .zealluck-footer-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 30px 0;
+    }
+    .zealluck-footer-column h3 {
+        margin-bottom: 17px;
+    }
+    .zealluck-footer-links a {
+        font-size: 15px;
+    }
+    .zealluck-contact-item p {
+        font-size: 15px;
+    }
+    .zealluck-trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .zealluck-footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .zealluck-footer-bottom > p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* Small Screens */
+@media (max-width: 380px) {
+    /* Navigation Bar */
+    .navbar-container {
+        min-height: 70px;
+        padding: 0 15px;
+    }
+    .navbar-logo img {
+        width: 75px;
+    }
+    .zealluck-mobile-navbar {
+        right: 15px;
+    }
+    .mobile-toggle img {
+        width: 27px;
+        height: 27px;
+    }
+    /* Hero Section */
+    .zealluck-hero-content {
+        padding: 38px 15px 22px;
+    }
+    .zealluck-hero-content h1 {
+        font-size: 32px;
+    }
+    .zealluck-hero-description {
+        font-size: 14px;
+    }
+    .zealluck-hero-buttons {
+        gap: 9px;
+    }
+    .hero-register-btn, .hero-login-btn {
+        padding: 11px 15px;
+        font-size: 13px;
+    }
+    .zealluck-hero-stats {
+        gap: 6px;
+    }
+    .hero-stat-card {
+        padding: 11px 7px;
+    }
+    .hero-stat-card h2 {
+        font-size: 17px;
+    }
+    .hero-stat-card p {
+        font-size: 9px;
+    }
+    .zealluck-hero-visual {
+        padding: 25px 12px;
+    }
+    .hero-image-caption {
+        padding: 12px 10px;
+    }
+    .hero-image-caption p {
+        font-size: 12px;
+    }
+    /* About Section */
+    .zealluck-about-section {
+        padding: 45px 15px;
+    }
+    .zealluck-about-container {
+        gap: 28px;
+    }
+    .zealluck-about-content > h2 {
+        font-size: 28px;
+    }
+    .zealluck-about-features {
+        gap: 7px;
+    }
+    .about-feature-card {
+        padding: 12px 7px;
+    }
+    .about-feature-card h3 {
+        font-size: 17px;
+    }
+    .about-feature-card p {
+        font-size: 10px;
+    }
+    .about-image-wrapper, .about-image-wrapper img {
+        min-height: 290px;
+    }
+    .about-vision-card, .about-mission-card {
+        width: 78%;
+        padding: 14px;
+    }
+    .about-vision-card p, .about-mission-card p {
+        font-size: 11px;
+    }
+    /* Features Section */
+    .zealluck-features-section {
+        padding: 35px 15px;
+    }
+    .zealluck-features-container {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .zealluck-feature-card {
+        min-height: auto;
+        padding: 24px 20px;
+    }
+    .zealluck-feature-icon {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        margin-bottom: 14px;
+    }
+    .zealluck-feature-card h3 {
+        font-size: 18px;
+    }
+    .zealluck-feature-card p {
+        max-width: 290px;
+        font-size: 15px;
+    }
+    /* Promo Section */
+    .zealluck-promo-section {
+        padding: 30px 16px;
+    }
+    .zealluck-promo-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .zealluck-promo-card {
+        height: 240px;
+    }
+    .community-promo {
+        grid-column: auto;
+        height: 240px;
+    }
+    /* Impact Section */
+    .zealluck-impact-grid {
+        grid-template-columns: 1fr;
+    }
+    .zealluck-impact-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+    .zealluck-impact-header h2 {
+        font-size: 24px;
+    }
+    /* Support Section */
+    .zealluck-support-header h2 {
+        font-size: 28px;
+    }
+    .zealluck-support-card {
+        padding: 24px 18px;
+    }
+    .zealluck-support-card-header h3 {
+        font-size: 20px;
+    }
+    /* Programs Section */
+    .zealluck-programs-header h2 {
+        font-size: 27px;
+    }
+    .zealluck-program-card {
+        padding: 26px 18px;
+    }
+    .zealluck-program-number {
+        font-size: 40px;
+    }
+    .zealluck-program-card h3 {
+        font-size: 20px;
+    }
+    /* Why Choose Section */
+    .zealluck-why-section {
+        padding: 50px 5%;
+    }
+    .zealluck-why-container {
+        gap: 30px;
+    }
+    .zealluck-why-btn {
+        width: 100%;
+        max-width: 90%;
+    }
+    /* Community Section */
+    .zealluck-community-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .zealluck-community-grid {
+        max-width: 320px;
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+    .zealluck-community-card {
+        padding: 18px 7px;
+    }
+   
+}
